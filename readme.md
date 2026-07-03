@@ -1,24 +1,20 @@
 # Distributed Wallet & Ledger System
 
-A production-grade digital wallet backend built with Spring Boot, implementing double-entry bookkeeping to guarantee financial consistency across all transactions — inspired by how
+A production-grade digital wallet backend built with Spring Boot, implementing double-entry bookkeeping to guarantee financial consistency across all transactions inspired by how
 real-world fintech platforms (Razorpay, Cred, Paytm) handle money movement safely at scale.
 
 ---
 
 ## Overview
 
-This system solves a core fintech engineering problem: **how do you move money between accounts
-without ever losing consistency, even under failures, retries, or concurrent requests?**
+This system solves a core fintech engineering problem: **How do you move money between accounts
+without ever losing consistency, even under failures, retries, or concurrent requests.**
 
 It implements:
 - **Double-entry bookkeeping** — every transaction creates a balanced debit + credit entry
 - **Idempotent APIs** — safe to retry without double-charging
 - **Automated reconciliation** — nightly batch job to catch and flag discrepancies
 - **Resilient external integrations** — circuit breaker + retry for simulated payment gateway calls
-
----
-
-*(Diagram will be updated with the final service breakdown as implementation progresses)*
 
 ---
 
